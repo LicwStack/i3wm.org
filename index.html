@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>i3 - improved tiling wm</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
+    <link rel="publisher" href="https://plus.google.com/113555191861605339299">
+    <meta name="description" content="i3 is a dynamic tiling window manager with clean, readable and documented code, featuring extended Xinerama support, usage of libxcb instead of xlib and several improvements over wmii">
+    <meta name="keywords" content="i3, window, manager, tiling, keyboard, wmii, x11, xcb, xinerama, utf8">
+    <meta name="author" content="i3 developers">
+
+</head>
+
+<body>
+    <div id="main">
+        <a href="/">
+            <h1 id="title">i3 - improved tiling WM</h1>
+        </a>
+        <ul id="nav">
+
+            <li><a href="/docs/">Docs</a></li>
+
+
+
+            <li><a href="/screenshots/">Screens</a></li>
+
+
+
+            <li><a href="https://www.reddit.com/r/i3wm/">FAQ</a></li>
+
+
+
+            <li><a href="/contact/">Contact</a></li>
+
+
+
+            <li><a href="https://github.com/i3/i3/issues">Bugs</a></li>
+
+
+        </ul>
+        <br style="clear: both">
+        <div id="info" class="clearfix">
+
+            <div id="screens">
+                <a href="/screenshots/" title="view more screenshots of i3">
+                    <img id="screenshot" src="/screenshots/i3-9.bigthumb.png" width="375" height="234" alt="i3 screenshot" srcset="/screenshots/i3-12.bigthumb.jpg 2x">
+                </a>
+            </div>
+
+            <h2>按我说的做. 好的文档. 干净的代码. 听起来不错?</h2>
+            <p>
+                那么你会爱上i3. 观看<a href="/screenshots/">屏幕录像</a>,<br> 阅读
+                <a href="/docs/userguide.html">用户指南</a> 和 <a href="/downloads/">安装 i3</a>!
+            </p>
+            <div id="download">
+                <a href="/downloads">
+                    <span style="font-weight: bold; color: #3A8ECD; margin-right: .5em">➡</span> 下载最新版本
+                    <span style="margin-left: 2em; color: #c0c0c0">4.13</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="content">
+            <p>
+                i3是一个 <a href="http://en.wikipedia.org/wiki/Tiling_window_manager">平铺式窗口管理器</a>, 全部从零开始写起. 目标平台是 GNU/Linux 和 BSD 操作系统, 我们的代码是自由的，是在BSD许可证下的开源软件. i3 主要针对高级用户和开发者. 建立在我们希望破解修复窗口管理器二代的经验上,我们同意i3的以下目标:
+            </p>
+
+            <ol>
+                <li>
+                    编写可读性强<strong>文档良好</strong> 的代码. 通过解释其内部工作原理创建附加文档以扩展i3.
+                    <br /> 这包括可以通过知道如何编程，但不一定熟悉X11内部的人的修改。 也就是说，记录事件发生的时间和发生时间，以便用户通过阅读源代码来获取窗口管理器负责的整个过程的情况。
+                </li>
+                <li>
+                    使用xcb而不是Xlib。xcb有一个更干净的API，在很多情况下应该更快
+                </li>
+                <li>
+                    正确实现多显示器，这是通过将每个工作区分配到虚拟屏幕来实现的。特别要确保在操作过程中，像视频放映机那样安装和分离新的监视器，这样做是正确的。也为旋转的监视器提供支持。
+                </li>
+                <li>
+                    使用树作为数据结构。这允许使用比其他窗口管理器使用的基于列的方法更灵活的布局。
+                </li>
+                <li>
+                    执行不同的模式，如vim。您可以使用不同的快捷键，比如当在“调整”模式时和在默认模式下 的例子。
+                </li>
+                <li>
+                    为其他程序实现IPC接口。为某些事件提供订阅，并接受命令。
+                    <br /> 这种方法应该比wmii使用的9P文件系统更轻。此外，核心功能不依赖于单独的程序，因此i3运行得更快，特别是当系统处于负载之下时
+                </li>
+                <li>
+                    utf - 8是干净的
+                </li>
+                <li>
+                    在最小的窗口管理器中，通常的精英主义:不要臃肿，不要幻想(简单的边界是我们想要的最多的装饰)。
+                    <br /> 但是，我们不强制执行不必要的限制，例如最大数量的源代码行。如果它需要大一点，它就会是。
+                </li>
+            </ol>
+
+            <p>
+                除了这些既定的目标外，我们还在考虑为项目做出贡献时尽力维护下列价值:
+            </p>
+
+            <ul>
+                <li>
+                    永远不要破坏配置文件或现有的工作流。打破的变化需要一个主要版本肿块(v4→v5)。
+                </li>
+                <li>
+                    保持头脑的复杂性:一旦你知道i3的关键特征，其他特征应该很容易理解。
+                </li>
+                <li>
+                    只添加有利于许多人的特性，而不是花费大量的时间来支持很少使用的工作流。
+                </li>
+                <li>
+                    只支持记录的行为。清楚的文档是对贡献的要求。
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="footer" lang="de">
+        © 2009 Michael Stapelberg, <a href="/impress.html">版权说明</a>
+    </div>
+</body>
+</html>
