@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>i3 - improved tiling wm</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -22,13 +22,13 @@
 
             <li><a href="/docs/">文档</a></li>
 
-            <li><a href="/screenshots/">屏幕</a></li>
+            <li><a href="/screenshots/">视频</a></li>
 
             <li><a href="https://www.reddit.com/r/i3wm/">常见问题</a></li>
 
-            <li><a href="/contact/">联系</a></li>
+            <li><a href="/contact/">联系我们</a></li>
 
-            <li><a href="https://github.com/i3/i3/issues">错误</a></li>
+            <li><a href="https://github.com/i3/i3/issues">Bugs</a></li>
 
         </ul>
         <br style="clear: both">
@@ -40,70 +40,68 @@
                 </a>
             </div>
 
-            <h2>按我说的做. 好的文档. 干净的代码. 听起来不错?</h2>
+            <h2>我的意思是：良好的文档，整洁的代码。听起来很不错吧?</h2>
             <p>
-                那么你会爱上i3. 观看<a href="/screenshots/">屏幕录像</a>,<br> 阅读
-                <a href="/docs/userguide.html">用户指南</a> 和 <a href="/downloads/">安装 i3</a>!
+                那么你将会爱上i3。观看<a href="/screenshots/">视频录像</a>，阅读<a href="/docs/userguide.html">用户指南</a> 和<a href="/downloads/">安装i3</a>！
             </p>
             <div id="download">
                 <a href="/downloads">
-                    <span style="font-weight: bold; color: #3A8ECD; margin-right: .5em">➡</span> 下载最新版本
-                    <span style="margin-left: 2em; color: #c0c0c0">4.13</span>
+                    <span style="font-weight: bold; color: #3A8ECD; margin-right: .5em">➡</span> 下载最新版本<span style="margin-left: 2em; color: #c0c0c0">4.13</span>
                 </a>
             </div>
         </div>
 
         <div id="content">
             <p>
-                i3是一个 <a href="http://en.wikipedia.org/wiki/Tiling_window_manager">平铺式窗口管理器</a>, 全部从零开始写起. 目标平台是 GNU/Linux 和 BSD 操作系统, 我们的代码是自由的，是在BSD许可证下的开源软件. i3 主要针对高级用户和开发者. 建立在我们希望破解修复wmii的经验上,我们同意i3的以下目标:
+                i3是一个<a href="http://en.wikipedia.org/wiki/Tiling_window_manager">平铺式窗口管理器</a>，全部从零开始编写。其目标平台是GNU/Linux和BSD操作系统，我们的代码是基于BSD许可的免费和开放源码的软件（开源软件）。i3主要面向高级用户和开发者。基于我们在想要对wmii进行黑客攻击时所做的经验，我们达成了对i3的以下目标:
             </p>
 
             <ol>
                 <li>
-                    编写可读性强<strong>文档良好</strong> 的代码. 通过解释其内部工作原理创建附加文档以扩展i3.
-                    <br /> 这包括可以通过知道如何编程，但不一定熟悉X11内部的人的修改。 也就是说，记录事件发生的时间和发生时间，以便用户通过阅读源代码来获取窗口管理器负责的整个过程的情况。
+                    编写易读、<strong>文档齐全</strong>的代码。创建关于如何扩展i3的附加文档，解释它的内部工作原理。
+                    <br />这包括那些知道如何编程但又不熟悉X11的内部细节的人的修改。也就是说，记录事件发生的原因和发生的时间，以便用户通过阅读源代码来获取窗口管理器负责的整个过程的全貌。
                 </li>
                 <li>
-                    使用xcb而不是Xlib。xcb有一个更干净的API，在很多情况下应该更快
+                    使用xcb而不是Xlib。xcb有一个更简洁的API，在很多情况下应该更快。
                 </li>
                 <li>
-                    正确实现多显示器，这是通过将每个工作区分配到虚拟屏幕来实现的。特别要确保在操作过程中，像视频放映机那样安装和分离新的监视器，这样做是正确的。也为旋转的监视器提供支持。
+                    正确实现多显示器，这是通过将每个工作区分配到一个虚拟屏幕来实现的。特别要确保在操作过程中做正确的事，像视频放映机附加和分离新的显示器那样。i3同样也支持旋转的显示器。
                 </li>
                 <li>
-                    使用树作为数据结构。这允许使用比其他窗口管理器使用的基于列的方法更灵活的布局。
+                    使用树作为数据结构。这比其他基于列的方法的窗口管理器有更灵活的布局。
                 </li>
                 <li>
-                    执行不同的模式，如vim。您可以使用不同的快捷键，比如当在“调整”模式时和在默认模式下 的例子。
+                    执行不同的模式，比如在vim中。例如，当在“调整”模式下和在默认模式下您可以使用不同的快捷键。
                 </li>
                 <li>
-                    为其他程序实现IPC接口。为某些事件提供订阅，并接受命令。
-                    <br /> 这种方法应该比wmii使用的9P文件系统更轻。此外，核心功能不依赖于单独的程序，因此i3运行得更快，特别是当系统处于负载之下时
+                    为其他程序实现IPC接口。提供对某些事件的订阅，并接受命令。
+                    <br />这种方法应该比wmii对9P文件系统的使用更加轻量级。此外，核心功能并不依赖于单独的程序，因此i3运行得更快，尤其是当您的系统处于负载之下时。
                 </li>
                 <li>
-                    utf - 8是干净的
+                    使用UTF-8保持简洁。
                 </li>
                 <li>
-                    在最小的窗口管理器中，通常的精英主义:不要臃肿，不要幻想(简单的边界是我们想要的最多的装饰)。
-                    <br /> 但是，我们不强制执行不必要的限制，例如最大数量的源代码行。如果它需要大一点，它就会是。
+                    最小窗口管理者中通常的精英主义：不臃肿，不花哨（简单的边框是我们想要拥有的最多的装饰）。
+                    <br />但是，我们不会强制执行一些不必要的限制，例如最大的源代码行数。如果它需要再大一点，它就会变大。
                 </li>
             </ol>
 
             <p>
-                除了这些既定的目标外，我们还在考虑为项目做出贡献时尽力维护下列价值:
+                除了这些既定的目标外，在考虑对项目做出贡献时尽量保持以下价值观:
             </p>
 
             <ul>
                 <li>
-                    永远不要破坏配置文件或现有的工作流。打破的变化需要一个主要版本升级(v4→v5)。
+                    切勿中断配置文件或现有的工作流。中断更改需要一个主要版本升级(v4→v5)。
                 </li>
                 <li>
-                    保持头脑的复杂性:一旦你知道i3的关键特征，其他特征应该很容易理解。
+                    保持头脑的复杂性：一旦你知道i3的关键特征，其他特征应该很容易理解。
                 </li>
                 <li>
                     只添加有利于许多人的特性，而不是花费大量的时间来支持很少使用的工作流。
                 </li>
                 <li>
-                    只支持记录的行为。清楚的文档是对贡献的要求。
+                    只支持记录的行为。清晰的文档是对贡献的要求。
                 </li>
             </ul>
 
@@ -112,7 +110,8 @@
     </div>
 
     <div id="footer" lang="de">
-        © 2009 Michael Stapelberg, <a href="/impress.html">版权说明</a>
+        © 2009 Michael Stapelberg, <a href="/impress.html">版权信息</a>
     </div>
 </body>
+
 </html>
