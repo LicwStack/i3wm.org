@@ -83,8 +83,7 @@
                         <p>红色按键是您需要按下（默认）的修饰符，蓝色按键是您的盲打区.</p>
                     </div>
                     <div class="paragraph">
-                        <p>Note that when starting i3 without a config file, i3-config-wizard will offer you to create a config file in which the key positions (!) match what you see in the image above, regardless of the keyboard layout you are using. If you prefer to use a config file where the key letters match what you are seeing above, just decline i3-config-wizard’s offer and base your config on
-                            <tt>/etc/i3/config</tt>.</p>
+                        <p>注意：当启动i3时，如果没有配置文件，i3配置向导将提供您创建一个配置文件，其中主要的位置与您在上面的图像中看到的内容相匹配，而不管您使用的键盘布局是什么。如果你更喜欢使用主要的字母和你在上面看到的相匹配的配置文件，只需要拒绝i3配置向导提供的配置，使用<tt>/etc/i3/config</tt>位置的配置文件。</p>
                     </div>
                 </div>
             </div>
@@ -92,12 +91,12 @@
                 <h2 id="_using_i3">2. 使用i3</h2>
                 <div class="sectionbody">
                     <div class="paragraph">
-                        <p>Throughout this guide, the keyword <tt>$mod</tt> will be used to refer to the configured modifier. This is the Alt key (<tt>Mod1</tt>) by default, with the Windows key (<tt>Mod4</tt>) being a popular alternative.</p>
+                        <p>在整个指南中，关键字<tt>$mod</tt>将用于引用已配置的修饰符。这是默认的Alt键(<tt>Mod1</tt>)，Windows键(<tt>Mod4</tt>)是一个流行的替代方案。</p>
                     </div>
                     <div class="sect2">
-                        <h3 id="_opening_terminals_and_moving_around">2.1. Opening terminals and moving around</h3>
+                        <h3 id="_opening_terminals_and_moving_around">2.1.打开终端和移动终端位置</h3>
                         <div class="paragraph">
-                            <p>One very basic operation is opening a new terminal. By default, the keybinding for this is <tt>$mod+Enter</tt>, that is Alt+Enter (<tt>Mod1+Enter</tt>) in the default configuration. By pressing <tt>$mod+Enter</tt>, a new terminal will be opened. It will fill the whole space available on your screen.</p>
+                            <p>一个非常基础的操作是打开一个新的终端。该操作的默认键是<tt>$mod+Enter</tt>,在默认配置中就是Alt+Enter (<tt>Mod1+Enter</tt>)。通过按下<tt>$mod+Enter</tt>,一个新的终端将会打开。它将会占满你屏幕中可用的全部空间。</p>
                         </div>
                         <div class="paragraph">
                             <p><span class="image">
@@ -105,7 +104,7 @@
 </span></p>
                         </div>
                         <div class="paragraph">
-                            <p>If you now open another terminal, i3 will place it next to the current one, splitting the screen size in half. Depending on your monitor, i3 will put the created window beside the existing window (on wide displays) or below the existing window (rotated displays).</p>
+                            <p>如果你再打开一个终端, i3将会把屏幕大小分成两半，将它放在当前终端的旁边。取决于你的显示器，i3将在现有窗口（宽的显示器）或者现有窗口（旋转显示器）旁边放置创建的窗口。</p>
                         </div>
                         <div class="paragraph">
                             <p><span class="image">
